@@ -1,0 +1,18 @@
+- Comandos de containers:
+    - `docker <comando> <subcomando> <parâmetros>` é o formato padrão para comandos não-abreviados no CLI;
+    - **docker  - - help:** lista de comandos;
+    - **docker images:** visualizar a imagens Docker presentes na máquina;
+    - **docker ps / docker container ls:** visualizar os containers presentes na máquina;
+    - **docker run -it *imagem*:** cria um container e já roda o mesmo baseado na imagem dada (se utilizar a flag -itd, o container rodará em segundo plano);
+    Obs: a flag  - -rm em docker run -it —rm irá remover o container após fechá-lo, evitando acúmulo de “lixo” no sistema.
+    - **docker create -it:** cria um container sem executá-lo;
+    - **docker attach:** entra em um container já em execução;
+    - **docker stop:** para um container em execução;
+    - **docker start:** inicia um container parado;
+    - **docker restart:** reinicia um container;
+    - **docker pause:** pausa um container;
+    - **docker unpause:** retorna um container a atividade;
+    - **docker rm:** remove um container;
+    - **docker container prune:** remove containers parados;
+    - **flag —name(antes da imagem):** nomear container;
+    - **docker system prune -af:** remove todos os containers e imagens.
